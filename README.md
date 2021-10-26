@@ -3,7 +3,6 @@ This project use main standard hooks in order to manage user cart
  
 (useState, UseEffect, useContext, useReducer)
 
-TRY the [DEMO](https://fast-chamber-40585.herokuapp.com/)
 
 
 Heroku puts the app to sleep after 30 minutes of inactivity. This is what makes the app slow to load. When your app's dyno is asleep, waking it up may take some time. But after the first load, it starts loading pretty fast!
