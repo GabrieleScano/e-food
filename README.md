@@ -1,3 +1,7 @@
+# E-commerce Cart 
+  This project use main standard hooks in order to manage user cart
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
