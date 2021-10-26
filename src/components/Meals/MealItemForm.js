@@ -2,7 +2,7 @@ import { useRef, useState } from 'react'
 import { Input } from '../UI/Input'
 import classes from './MealItemForm.module.css'
 
-export const MealItemForm = (props) => {
+export const MealItemForm = ({onAddToCart, id }) => {
     
     const [amountIsValid, setAmountIsValid] = useState(true)
     const amountInputRef = useRef()
@@ -20,7 +20,7 @@ export const MealItemForm = (props) => {
                 setAmountIsValid(false)
             return
         }
-        props.onAddToCart(enteredAmountNumber)
+        onAddToCart(enteredAmountNumber)
     }
 
     return (
@@ -29,7 +29,7 @@ export const MealItemForm = (props) => {
                 ref={amountInputRef}
                 label='Amount'
                 input={{
-                    id: 'amount' + props.id,
+                    id: 'amount' + id,
                     type: 'number',
                     min: '1',
                     max: '5',

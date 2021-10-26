@@ -4,7 +4,7 @@ import { Modal } from '../UI/Modal'
 import classes from './Cart.module.css'
 import { CartItem } from './CartItem'
 
-export const Cart = (props) => {
+export const Cart = ({onClose}) => {
 
     const cartCtx = useContext(CartContext)
 
@@ -36,7 +36,7 @@ export const Cart = (props) => {
     )
 
     return (
-        <Modal onClose={props.onClose}>
+        <Modal onClose={onClose}>
             {cartItems}
             <div className={classes.total}>
                 <span>Total Amount</span>
@@ -45,7 +45,7 @@ export const Cart = (props) => {
             <div className={classes.actions}>
                 <button
                     className={classes['button--alt']}
-                    onClick={props.onClose}>
+                    onClick={onClose}>
                     Close
                 </button>
                 {hasItems && <button className={classes.button}>Order</button>}

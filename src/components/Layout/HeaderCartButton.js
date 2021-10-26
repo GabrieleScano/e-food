@@ -3,7 +3,7 @@ import { CartContext } from '../../store/cart-context'
 import { CartIcon } from '../Cart/CartIcon'
 import classes from './HeaderCartButton.module.css'
 
-export const HeaderCartButton = (props) => {
+export const HeaderCartButton = ({onClick}) => {
     const [btnIsHighlighted, setBtnIsHighlighted] = useState(false)
 
     const cartCtx = useContext(CartContext)
@@ -34,7 +34,7 @@ export const HeaderCartButton = (props) => {
     return (
         <button 
         className={btnClasses} 
-        onClick={props.onClick}
+        onClick={onClick}
         >
             <span className={classes.icon}>
                 <CartIcon />

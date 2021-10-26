@@ -69,4 +69,13 @@
       background-color: #15dd97;
       margin-left: 3px;
     }
+
+    .button:hover,
+    .button:active {
+      background-color: #15dd97;
+    }  
+    .button:hover .badge,
+    .button:active .badge {
+      background-color: #15dd97;
+    }
    }
