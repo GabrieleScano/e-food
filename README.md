@@ -1,10 +1,9 @@
 # E-Food 
-delivery app
-This project use main standard hooks in order to manage user cart, add items, form and orders
+e-food is a delovery app that use main standard hooks in order to manage user cart, add items, form and orders
 
 Try the [DEMO](https://fast-chamber-40585.herokuapp.com/).
 
-React
+React (Hooks)
 
 Realtime Database: Firebase
 
