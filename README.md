@@ -1,7 +1,7 @@
 # E-Food 
 e-food is a delovery app that use main standard hooks in order to manage user cart, add items, form and orders
 
-Try the [DEMO](https://fast-chamber-40585.herokuapp.com/).
+Try the [DEMO](https://rocky-stream-06257.herokuapp.com/).
 
 React (Hooks)
 
